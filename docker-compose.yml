@@ -16,11 +16,5 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Asia/Tokyo
-    volumes:
-      - /home/yude/docker-compose/jellyfin/config:/config
-      - /mnt/data1/dtv:/data/encoded
-      - /mnt/data1/Music:/data/music
-      - /mnt/data5/Documents/nsfw/iwara:/data/iwara
-      - /mnt/data4/recorded:/data/recorded
     network_mode: host
     restart: unless-stopped
